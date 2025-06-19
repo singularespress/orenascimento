@@ -1,9 +1,9 @@
-// Dados do quiz
+// Dados do quiz - Expandindo para 10 perguntas completas
 const quizData = [
     {
         id: 1,
         question: "Qual mentira você ainda conta a si mesmo sobre sua fraqueza?",
-        image: "images/q1_batalha_interna.png", // Manter ou atualizar conforme novas imagens
+        image: "images/q1_batalha_interna.png",
         answers: [
             { text: "Que 'amanhã eu começo' a mudar.", value: "A" },
             { text: "Que meus vícios não são tão ruins assim.", value: "B" },
@@ -24,117 +24,131 @@ const quizData = [
     },
     {
         id: 3,
-        question: "Seus vícios (pornografia, procrastinação, comida lixo) são seus mestres ou seus escravos?",
+        question: "Qual vício te domina mais profundamente?",
         image: "images/q3_vicios.png",
         answers: [
-            { text: "Totalmente mestres. Sou um fantoche deles.", value: "A" },
-            { text: "Luto, mas eles quase sempre vencem a batalha.", value: "B" },
-            { text: "Estou aprendendo a domesticá-los, mas ainda escapam.", value: "C" },
-            { text: "Eu os controlo. Eles servem a mim, não o contrário.", value: "D" }
+            { text: "Procrastinação - sempre deixo para depois.", value: "A" },
+            { text: "Pornografia ou masturbação excessiva.", value: "B" },
+            { text: "Álcool, drogas ou outros vícios químicos.", value: "C" },
+            { text: "Já superei meus vícios principais.", value: "D" }
         ]
     },
     {
         id: 4,
-        question: "Sua vida sexual hoje te define como um Garanhão ou um Fracassado?",
+        question: "Como você se sente em relação à sua vida sexual?",
         image: "images/q4_vida_sexual.png",
         answers: [
-            { text: "Fracassado. A chama apagou faz tempo.", value: "A" },
-            { text: "Mais para o lado do fracasso, com lampejos de esperança.", value: "B" },
-            { text: "Em reconstrução. Redescobrindo o fogo.", value: "C" },
-            { text: "Garanhão. Poder e controle na cama.", value: "D" }
+            { text: "Insatisfeito e com baixa autoestima.", value: "A" },
+            { text: "Dependente de fantasias irreais.", value: "B" },
+            { text: "Em processo de melhoria.", value: "C" },
+            { text: "Confiante e satisfeito.", value: "D" }
         ]
     },
     {
         id: 5,
-        question: "O medo te paralisa ou te impulsiona para a guerra?",
+        question: "Como você lida com seus medos e desafios?",
         image: "images/q5_desafios_medos.png",
         answers: [
-            { text: "Paralisa. Fujo de qualquer confronto ou desafio.", value: "A" },
-            { text: "Sinto o medo, mas avanço com o coração na boca.", value: "B" },
-            { text: "Uso o medo como combustível para me preparar melhor.", value: "C" },
-            { text: "O medo? É só um tempero para a vitória.", value: "D" }
+            { text: "Evito e procrastino.", value: "A" },
+            { text: "Enfrento, mas com muito sofrimento.", value: "B" },
+            { text: "Busco ajuda e estratégias.", value: "C" },
+            { text: "Encaro de frente com determinação.", value: "D" }
         ]
     },
     {
-        id: 6, // Pergunta Surpresa
-        question: "Se sua vida fosse um filme de guerra, qual seria seu papel principal?",
-        image: "images/q6_filme_guerra.png", // Nova imagem sugerida
+        id: 6,
+        question: "Qual filme de guerra mais te inspira?",
+        image: "images/q6_filme_guerra.png",
         answers: [
-            { text: "O recruta assustado que se esconde na trincheira.", value: "A" },
-            { text: "O soldado que cumpre ordens, mas sonha com o fim da guerra.", value: "B" },
-            { text: "O sargento que lidera pelo exemplo, mesmo ferido.", value: "C" },
-            { text: "O general estrategista que comanda a vitória final.", value: "D" }
+            { text: "Não gosto de filmes de guerra.", value: "A" },
+            { text: "300 - pela coragem dos espartanos.", value: "B" },
+            { text: "O Resgate do Soldado Ryan - pela honra.", value: "C" },
+            { text: "Gladiador - pela força e determinação.", value: "D" }
         ]
     },
     {
         id: 7,
-        question: "Com as mulheres, você é o 'bonzinho' que sempre fica na friendzone ou o homem que elas desejam?",
+        question: "Como é seu relacionamento com as mulheres?",
         image: "images/q7_relacionamento_mulheres.png",
         answers: [
-            { text: "Rei da friendzone. O 'amigo' que elas nunca olham diferente.", value: "A" },
-            { text: "Às vezes consigo algo, mas não sei como manter o interesse.", value: "B" },
-            { text: "Estou aprendendo a ser mais assertivo e atraente.", value: "C" },
-            { text: "Elas me desejam. Eu escolho.", value: "D" }
+            { text: "Tenho dificuldades e inseguranças.", value: "A" },
+            { text: "Sou carente e dependente emocionalmente.", value: "B" },
+            { text: "Estou aprendendo a ser mais confiante.", value: "C" },
+            { text: "Sou respeitado e tenho relacionamentos saudáveis.", value: "D" }
         ]
     },
     {
         id: 8,
-        question: "Quando a fraqueza bate, você se entrega à escuridão ou acende a porra da sua luz interior?",
+        question: "Quando você se sente fraco ou vulnerável, o que faz?",
         image: "images/q8_fraco_vulneravel.png",
         answers: [
-            { text: "Me afogo na escuridão. A autopiedade é meu refúgio.", value: "A" },
-            { text: "Tento lutar, mas a escuridão é forte demais.", value: "B" },
-            { text: "Busco uma faísca, uma pequena luz para me guiar.", value: "C" },
-            { text: "Eu SOU a luz. A fraqueza não tem vez aqui.", value: "D" }
+            { text: "Me escondo e evito responsabilidades.", value: "A" },
+            { text: "Busco vícios para escapar da realidade.", value: "B" },
+            { text: "Procuro ajuda e trabalho na melhoria.", value: "C" },
+            { text: "Uso isso como combustível para crescer.", value: "D" }
         ]
     },
     {
         id: 9,
-        question: "Sua procrastinação é um hábito ou uma sentença de morte para seus sonhos?",
+        question: "Qual sua atitude em relação ao crescimento pessoal?",
         image: "images/q9_crescimento_pessoal.png",
         answers: [
-            { text: "Sentença de morte. Meus sonhos morrem na praia.", value: "A" },
-            { text: "Um hábito terrível que sabota meu progresso.", value: "B" },
-            { text: "Luto contra ela diariamente, com algumas vitórias.", value: "C" },
-            { text: "Procrastinação? Não conheço essa palavra. Eu EXECUTO.", value: "D" }
+            { text: "Acho que é perda de tempo.", value: "A" },
+            { text: "Tenho interesse, mas não pratico.", value: "B" },
+            { text: "Estou ativamente me desenvolvendo.", value: "C" },
+            { text: "É minha prioridade número um.", value: "D" }
         ]
     },
     {
         id: 10,
-        question: "Ser HOMEM DE VERDADE é sobre ter nascido com um pênis ou sobre FORJAR um legado de honra e poder?",
+        question: "O que significa ser um homem de verdade para você?",
         image: "images/q10_homem_de_verdade.png",
         answers: [
-            { text: "Acho que é só sobre ter nascido assim...", value: "A" },
-            { text: "É sobre ser forte e não mostrar fraquezas.", value: "B" },
-            { text: "É sobre ser autêntico e ter coragem de ser quem se é.", value: "C" },
-            { text: "É FORJAR um legado de honra, poder e impacto no mundo.", value: "D" }
+            { text: "Não sei ao certo.", value: "A" },
+            { text: "Ser forte fisicamente.", value: "B" },
+            { text: "Ter responsabilidade e caráter.", value: "C" },
+            { text: "Dominar a si mesmo completamente.", value: "D" }
         ]
     }
 ];
 
-// Perfis emocionais (mantidos, pois são bons)
+// Perfis emocionais atualizados
 const profiles = {
     "A": {
         title: "O COVARDE OCULTO",
-        description: "Você evita o confronto, se esconde atrás de desculpas e procrastinação. Sente-se paralisado pelo medo e pela insegurança, preferindo a zona de conforto à verdadeira transformação. É passivo e evita responsabilidades, o que o leva a uma vida de frustração e arrependimento. Mas ainda há tempo para mudar essa realidade."
+        description: "Você evita o confronto, se esconde atrás de desculpas e procrastinação. Sente-se paralisado pelo medo e pela insegurança, preferindo a zona de conforto à verdadeira transformação. É passivo e evita responsabilidades, o que o leva a uma vida de frustração e arrependimento. Mas ainda há tempo para mudar essa realidade.",
+        image: "images/profiles/carousel_covarde_1.png",
+        ebookUrl: "https://drive.google.com/file/d/1NCYEsGs0xXROSx6Cbs4HEfHdT6D1Hptc/view?usp=sharing"
     },
     "B": {
-        title: "O FRACO CONSCIENTE",
-        description: "Você reconhece suas fraquezas e vícios, mas ainda luta para superá-los. Tem consciência de suas dores e limitações, mas lhe falta a força de vontade ou o direcionamento para agir. Pode se sentir preso em um ciclo de tentativas e falhas, buscando uma saída, mas sem encontrar o caminho. O primeiro passo é reconhecer - agora é hora de agir."
+        title: "O FRACO CONSCIENTE", 
+        description: "Você reconhece suas fraquezas e vícios, mas ainda luta para superá-los. Tem consciência de suas dores e limitações, mas lhe falta a força de vontade ou o direcionamento para agir. Pode se sentir preso em um ciclo de tentativas e falhas, buscando uma saída, mas sem encontrar o caminho. O primeiro passo é reconhecer - agora é hora de agir.",
+        image: "images/profiles/criativo_estatico.png",
+        ebookUrl: "https://drive.google.com/file/d/10V10YHnXEre9r7Dg_Y48gCKZXn08Mmgq/view?usp=sharing"
     },
     "C": {
         title: "O EM TRANSFORMAÇÃO",
-        description: "Você está ativamente buscando a mudança. Já deu os primeiros passos para superar seus vícios e fraquezas, e está comprometido com o processo de autodesenvolvimento. Enfrenta desafios com coragem, aprende com seus erros e busca constantemente se tornar a melhor versão de si mesmo. Está em uma jornada de renascimento."
+        description: "Você está ativamente buscando a mudança. Já deu os primeiros passos para superar seus vícios e fraquezas, e está comprometido com o processo de autodesenvolvimento. Enfrenta desafios com coragem, aprende com seus erros e busca constantemente se tornar a melhor versão de si mesmo. Está em uma jornada de renascimento.",
+        image: "images/profiles/criativo_estatico.png",
+        ebookUrl: "https://drive.google.com/file/d/1Nf_LxDpizdEDOgkoxJYyYz3BqFK7S7ap/view?usp=sharing"
     },
     "D": {
         title: "O BRUTAL IMPARÁVEL",
-        description: "Você transcendeu suas limitações e se tornou mestre de si mesmo. É disciplinado, focado e implacável em seus objetivos. Enfrenta qualquer obstáculo com determinação, transformando dor em poder. Lidera pelo exemplo, inspira outros e vive uma vida de propósito e controle. É a personificação da virilidade e da força interior."
+        description: "Você transcendeu suas limitações e se tornou mestre de si mesmo. É disciplinado, focado e implacável em seus objetivos. Enfrenta qualquer obstáculo com determinação, transformando dor em poder. Lidera pelo exemplo, inspira outros e vive uma vida de propósito e controle. É a personificação da virilidade e da força interior.",
+        image: "images/profiles/criativo_estatico.png",
+        ebookUrl: "https://drive.google.com/file/d/1CwqfwfyQNBmS4yhcPpMHNeWcNYMHEmGW/view?usp=sharing"
     }
+};
+
+// Mapeamento adicional para perfis específicos
+const profileMapping = {
+    "guerreiro_brutal": "https://drive.google.com/file/d/1u7zjosQyp9URTy2xzcol6n1F0zJqlz_D/view?usp=sharing",
+    "estrategista_sombrio": "https://drive.google.com/file/d/1Te1YIQIBwxCqfGsDo10ZwATDDaAzA0wo/view?usp=sharing"
 };
 
 // Estado do quiz
 let currentQuestion = 0;
-let userAnswers = []; // Renomeado para evitar conflito com a variável global 'answers' de algumas extensões de navegador
+let userAnswers = [];
 let userPoints = 0;
 
 // Elementos DOM
@@ -161,25 +175,7 @@ function showQuestion(index) {
     progressBar.style.width = progress + '%';
     progressText.textContent = `${index + 1} / ${quizData.length}`;
     
-    // Adicionar GIF de fundo à questão (exemplo, precisa de um GIF real)
-    // questionImage.style.backgroundImage = `url('images/gifs/fogo_sutil.gif'), url('${question.image}')`; 
-    // A linha acima é um exemplo, precisaria de um GIF e ajuste no CSS para múltiplos backgrounds
     questionImage.style.backgroundImage = `url('${question.image}')`;
-    questionImage.innerHTML = ''; // Limpar GIFs anteriores se houver
-
-    // Adicionar GIF específico para a pergunta 6 (exemplo)
-    if (question.id === 6) {
-        const gifOverlay = document.createElement('img');
-        gifOverlay.src = 'images/gifs/explosao_surpresa.gif'; // Exemplo de GIF
-        gifOverlay.style.position = 'absolute';
-        gifOverlay.style.top = '0';
-        gifOverlay.style.left = '0';
-        gifOverlay.style.width = '100%';
-        gifOverlay.style.height = '100%';
-        gifOverlay.style.opacity = '0.7';
-        // questionImage.appendChild(gifOverlay); // Descomentar se tiver o GIF
-    }
-
     questionTitle.textContent = question.question;
     answersContainer.innerHTML = '';
     
@@ -200,7 +196,7 @@ function selectAnswer(value, button) {
     button.classList.add('selected');
     userAnswers[currentQuestion] = value;
     
-    // Adicionar pontos (exemplo simples, pode ser mais complexo)
+    // Adicionar pontos
     let pointsEarned = 0;
     if (value === 'D') pointsEarned = 20;
     else if (value === 'C') pointsEarned = 15;
@@ -212,7 +208,7 @@ function selectAnswer(value, button) {
     showIntermediateFeedback(currentQuestion + 1);
     setTimeout(() => {
         nextQuestion();
-    }, 1200); // Aumentar um pouco o delay para o feedback e pontos
+    }, 1200);
 }
 
 // Próxima pergunta
@@ -244,60 +240,19 @@ function showResult() {
     resultDescription.textContent = profile.description;
     
     showImageCarousel(dominantProfile);
-    const practicalTips = getPracticalTips(dominantProfile);
-    const tipsContainer = document.getElementById('practicalTips');
-    if (tipsContainer) tipsContainer.innerHTML = practicalTips;
-    
-    const testimonial = getTestimonial(dominantProfile);
-    const testimonialContainer = document.getElementById('testimonial');
-    if (testimonialContainer) testimonialContainer.innerHTML = testimonial;
+    showPracticalTips(dominantProfile);
+    showTestimonial(dominantProfile);
     
     startUrgencyTimer();
     updateTestCounter();
-    addPoints(100); // Pontos por completar
-    unlockAchievement("Autoconhecimento Brutal");
+    unlockAchievement('Autoconhecimento Brutal');
     
     progressBar.style.width = '100%';
     progressText.textContent = `Completo! Pontos: ${userPoints}`;
     localStorage.setItem('userProfile', dominantProfile);
 }
 
-// Capturar email
-function captureEmail() {
-    const email = document.getElementById('emailInput').value;
-    const profile = localStorage.getItem('userProfile');
-    
-    if (email && email.includes('@')) {
-        const profileEbookNames = {
-            'A': 'O Mapa da Guerra Interior: Quebrando as Correntes do Medo',
-            'B': 'O Protocolo Alfa: Da Consciência à Ação Implacável', 
-            'C': 'A Forja do Guerreiro: Acelerando Sua Evolução Brutal',
-            'D': 'O Legado do Imparável: Dominando Sua Realidade'
-        };
-        
-        const ebookName = profileEbookNames[profile] || 'O Código da Transformação Suprema';
-        
-        alert(`🔥 E-book BRUTAL "${ebookName}" enviado para ${email}!\n\nVerifique sua caixa de entrada (e spam) AGORA.\n\nPrepare-se para uma sequência de 7 e-mails que vão esmagar sua mediocridade.`);
-        
-        addPoints(50);
-        unlockAchievement("Arsenal Desbloqueado");
-        document.getElementById('emailInput').value = '';
-        document.querySelector('.email-capture').style.display = 'none';
-        
-        const successMsg = document.createElement('div');
-        successMsg.className = 'success-message';
-        successMsg.innerHTML = `
-            <h3>✅ ARSENAL ENVIADO!</h3>
-            <p>Sua jornada para a brutalidade começou. Agora, clique no botão abaixo e DESTRUA suas limitações:</p>
-        `;
-        document.querySelector('.result-card').insertBefore(successMsg, document.querySelector('.cta-button'));
-        
-    } else {
-        alert('Insira um e-mail de GUERREIRO, porra!');
-    }
-}
-
-// Funções de gamificação (exemplos, precisam ser implementadas no HTML/CSS também)
+// Funções de gamificação
 function showIntermediateFeedback(questionNumber) {
     const feedbackMessages = [
         "Resposta registrada. Continue a jornada...",
@@ -317,7 +272,7 @@ function showIntermediateFeedback(questionNumber) {
     document.body.appendChild(feedback);
     setTimeout(() => {
         document.body.removeChild(feedback);
-    }, 2500); // Duração do feedback
+    }, 2500);
 }
 
 function showPointsAnimation(points) {
@@ -333,7 +288,7 @@ function showPointsAnimation(points) {
 function unlockAchievement(achievementName) {
     const achievementNotif = document.createElement('div');
     achievementNotif.className = 'achievement-notification';
-    achievementNotif.innerHTML = `<span class="achievement-icon">🏆</span> <span class="achievement-text">Conquista: ${achievementName}!</span>`;
+    achievementNotif.innerHTML = `<span class='achievement-icon'>🏆</span> <span class='achievement-text'>Conquista: ${achievementName}!</span>`;
     document.body.appendChild(achievementNotif);
     setTimeout(() => {
         document.body.removeChild(achievementNotif);
@@ -353,7 +308,6 @@ function startUrgencyTimer() {
         if (timeLeft < 0) {
             clearInterval(interval);
             timerElement.textContent = "TEMPO ESGOTADO!";
-            // Poderia desabilitar o botão CTA ou mudar a oferta aqui
         }
     }, 1000);
 }
@@ -361,144 +315,160 @@ function startUrgencyTimer() {
 function updateTestCounter() {
     const counterElement = document.getElementById('testCounter');
     if (!counterElement) return;
-    let currentCount = parseInt(counterElement.textContent.replace(/\./g, '')) || 2847;
-    currentCount += Math.floor(Math.random() * 5) + 1; // Incremento aleatório pequeno
-    counterElement.textContent = currentCount.toLocaleString('pt-BR');
+    let currentCount = parseInt(counterElement.textContent.replace(/\./g, ''));
+    setInterval(() => {
+        currentCount += Math.floor(Math.random() * 3) + 1;
+        counterElement.textContent = currentCount.toLocaleString('pt-BR');
+    }, 5000);
 }
 
-// Carrossel de Imagens (exemplo básico)
-function showImageCarousel(profile) {
+// Funções de compartilhamento social
+function shareResult(platform) {
+    const profile = profiles[localStorage.getItem('userProfile')];
+    if (!profile) return;
+    
+    const quizUrl = window.location.href;
+    const shareText = `Acabei de descobrir meu perfil de masculinidade no quiz "Instinto - O Renascimento"! Meu perfil é: ${profile.title}. Descubra o seu também:`;
+
+    let url = "";
+    switch (platform) {
+        case "facebook":
+            url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(quizUrl)}&quote=${encodeURIComponent(shareText)}`;
+            break;
+        case "whatsapp":
+            url = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + " " + quizUrl)}`;
+            break;
+        case "twitter":
+            url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(quizUrl)}`;
+            break;
+        default:
+            console.log("Plataforma de compartilhamento não reconhecida.");
+            return;
+    }
+    window.open(url, '_blank');
+}
+
+// Função para download do e-book personalizado
+function downloadPersonalizedEbook() {
+    const userProfile = localStorage.getItem('userProfile');
+    const profile = profiles[userProfile];
+    
+    if (profile && profile.ebookUrl) {
+        // Mostrar mensagem de parabéns
+        const congratsMessage = document.createElement('div');
+        congratsMessage.className = 'achievement-notification';
+        congratsMessage.innerHTML = `
+            <span class='achievement-icon'>🎉</span> 
+            <span class='achievement-text'>Parabéns! Você deu o primeiro passo para a transformação!</span>
+        `;
+        document.body.appendChild(congratsMessage);
+        
+        setTimeout(() => {
+            document.body.removeChild(congratsMessage);
+        }, 4000);
+        
+        // Abrir o link do e-book
+        window.open(profile.ebookUrl, '_blank');
+    } else {
+        alert('E-book não disponível para este perfil.');
+    }
+}
+
+// Funções auxiliares
+function showImageCarousel(profileKey) {
     const carouselContainer = document.getElementById('imageCarousel');
     if (!carouselContainer) return;
 
-    const images = {
-        "A": ["images/results/covarde1.png", "images/results/covarde2.png"],
-        "B": ["images/results/fraco1.png", "images/results/fraco2.png"],
-        "C": ["images/results/transformacao1.png", "images/results/transformacao2.png"],
-        "D": ["images/results/brutal1.png", "images/results/brutal2.png"]
-    };
-    const profileImages = images[profile] || [];
-    if (profileImages.length === 0) return;
-
-    carouselContainer.innerHTML = ''; // Limpar anterior
-    const wrapper = document.createElement('div');
-    wrapper.className = 'carousel-wrapper';
-    const imageDiv = document.createElement('div');
-    imageDiv.className = 'carousel-image-container';
-    const img = document.createElement('img');
-    img.className = 'carousel-image';
-    img.src = profileImages[0];
-    imageDiv.appendChild(img);
-    wrapper.appendChild(imageDiv);
-
-    if (profileImages.length > 1) {
-        const dotsDiv = document.createElement('div');
-        dotsDiv.className = 'carousel-dots';
-        profileImages.forEach((src, index) => {
-            const dot = document.createElement('span');
-            dot.className = 'dot' + (index === 0 ? ' active' : '');
-            dot.onclick = () => {
-                img.style.opacity = 0;
-                setTimeout(() => {
-                    img.src = profileImages[index];
-                    img.style.opacity = 1;
-                    document.querySelectorAll('.carousel-dots .dot').forEach(d => d.classList.remove('active'));
-                    dot.classList.add('active');
-                }, 500);
-            };
-            dotsDiv.appendChild(dot);
-        });
-        wrapper.appendChild(dotsDiv);
+    const profile = profiles[profileKey];
+    if (profile && profile.image) {
+        carouselContainer.innerHTML = `
+            <div class="carousel-wrapper">
+                <div class="carousel-image-container">
+                    <img src="${profile.image}" alt="${profile.title}" class="carousel-image">
+                </div>
+            </div>
+        `;
     }
-    carouselContainer.appendChild(wrapper);
 }
 
-// Dicas e Testemunhos (mantidos como no original, mas podem ser expandidos)
-function getPracticalTips(profile) {
+function showPracticalTips(profileKey) {
+    const tipsContainer = document.getElementById('practicalTips');
+    if (!tipsContainer) return;
+    
     const tips = {
-        "A": `
-            <div class="practical-tips">
-                <h3>AÇÕES DE GUERRA IMEDIATAS PARA VOCÊ (COVARDE OCULTO):</h3>
-                <ul>
-                    <li><strong>ESMAGUE 1 MEDO HOJE:</strong> Escolha a menor coisa que te apavora e FAÇA. Sem desculpas.</li>
-                    <li><strong>DESTRUA 1 DISTRAÇÃO AGORA:</strong> Desinstale aquele app inútil. Bloqueie aquele site. Recupere seu foco.</li>
-                    <li><strong>FORJE 1 RITUAL MATINAL DE PODER:</strong> 5 minutos. Olhe no espelho e declare: EU NÃO SOU MAIS UM FRACO.</li>
-                </ul>
-            </div>
-        `,
-        "B": `
-            <div class="practical-tips">
-                <h3>PROTOCOLO DE CHOQUE PARA VOCÊ (FRACO CONSCIENTE):</h3>
-                <ul>
-                    <li><strong>MAPEIE SEUS INIMIGOS INTERNOS:</strong> Anote quando e por que seus vícios te dominam. Conheça o inimigo.</li>
-                    <li><strong>SUBSTITUA FRAQUEZA POR FORÇA:</strong> Troque 1 hora de vício por 30 minutos de treino BRUTAL. HOJE.</li>
-                    <li><strong>DECLARE GUERRA À SUA MEDIOCRIDADE:</strong> Conte a UM homem de confiança sua decisão de mudar. Sem volta.</li>
-                </ul>
-            </div>
-        `,
-        "C": `
-            <div class="practical-tips">
-                <h3>DIRETRIZES DE AVANÇO PARA VOCÊ (EM TRANSFORMAÇÃO):</h3>
-                <ul>
-                    <li><strong>CELEBRE CADA VITÓRIA COMO UM LEÃO:</strong> Reconheça sua força. Cada passo é um massacre contra seu antigo eu.</li>
-                    <li><strong>BLINDE SEU 'PORQUÊ':</strong> Escreva 3 MOTIVOS INEGOCIÁVEIS pelos quais você NUNCA MAIS voltará a ser fraco.</li>
-                    <li><strong>BUSQUE ALIANÇAS DE AÇO:</strong> Conecte-se com homens que já venceram essa guerra. Modele a excelência.</li>
-                </ul>
-            </div>
-        `,
-        "D": `
-            <div class="practical-tips">
-                <h3>ORDENS DE COMANDO PARA VOCÊ (BRUTAL IMPARÁVEL):</h3>
-                <ul>
-                    <li><strong>ELEVE O PADRÃO. DE NOVO:</strong> O topo da montanha é a base da próxima. Defina desafios que te façam tremer.</li>
-                    <li><strong>FORJE NOVOS GUERREIROS:</strong> Sua jornada inspira. Mentore outros homens. Deixe um legado de força.</li>
-                    <li><strong>DOMINE SUA MISSÃO:</strong> Clareza ABSOLUTA sobre seu propósito. Impacto MASSIVO no mundo. Sem piedade.</li>
-                </ul>
-            </div>
-        `
+        "A": [
+            "Comece com pequenas ações diárias",
+            "Defina metas claras e alcançáveis", 
+            "Busque um mentor ou grupo de apoio",
+            "Pratique exercícios físicos regularmente"
+        ],
+        "B": [
+            "Reconheça seus padrões destrutivos",
+            "Substitua vícios por hábitos saudáveis",
+            "Procure ajuda profissional se necessário",
+            "Celebre pequenas vitórias"
+        ],
+        "C": [
+            "Continue investindo em seu desenvolvimento",
+            "Mantenha a disciplina e consistência",
+            "Compartilhe sua jornada com outros",
+            "Estabeleça novos desafios"
+        ],
+        "D": [
+            "Seja um exemplo para outros homens",
+            "Continue refinando suas habilidades",
+            "Mentore outros em transformação",
+            "Mantenha-se sempre em evolução"
+        ]
     };
-    return tips[profile] || '';
+    
+    const profileTips = tips[profileKey] || [];
+    tipsContainer.innerHTML = `
+        <div class="practical-tips">
+            <h3>Dicas Práticas para ${profiles[profileKey].title}:</h3>
+            <ul>
+                ${profileTips.map(tip => `<li><strong>•</strong> ${tip}</li>`).join('')}
+            </ul>
+        </div>
+    `;
 }
 
-function getTestimonial(profile) {
+function showTestimonial(profileKey) {
+    const testimonialContainer = document.getElementById('testimonial');
+    if (!testimonialContainer) return;
+    
     const testimonials = {
-        "A": `
-            <div class="testimonial">
-                <blockquote>
-                    "Eu era um rato assustado. Vivia me escondendo. O Código Brutal me deu um tapa na cara e as ferramentas pra virar um leão. Se eu consegui, VOCÊ CONSEGUE."
-                </blockquote>
-                <cite>- Ricardo 'Ex-Covarde', 35 anos</cite>
-            </div>
-        `,
-        "B": `
-            <div class="testimonial">
-                <blockquote>
-                    "Sabia que tava na merda, mas não sabia como sair. Esse quiz foi o primeiro passo. Hoje, eu comando minha vida, não meus vícios. Acredite, a mudança é possível."
-                </blockquote>
-                <cite>- Fernando 'O Resiliente', 29 anos</cite>
-            </div>
-        `,
-        "C": `
-            <div class="testimonial">
-                <blockquote>
-                    "A jornada é dura, mas a recompensa é indescritível. Deixei de ser uma sombra pra me tornar a porra de um guerreiro. Continue lutando, a vitória é certa!"
-                </blockquote>
-                <cite>- André 'Em Ascensão', 31 anos</cite>
-            </div>
-        `,
-        "D": `
-            <div class="testimonial">
-                <blockquote>
-                    "Não existe limite pra quem decide ser imparável. O Código Brutal é só o começo. Use cada palavra, cada desafio, pra construir um império. Nos vemos no topo."
-                </blockquote>
-                <cite>- 'Comandante' Silva, 42 anos</cite>
-            </div>
-        `
+        "A": {
+            text: "Eu era exatamente como você. Vivia adiando, fazendo desculpas. O Código Brutal me deu a estrutura que eu precisava para finalmente agir.",
+            author: "Carlos M., 34 anos"
+        },
+        "B": {
+            text: "Reconhecia meus problemas, mas não sabia como resolver. Este método me mostrou o caminho prático para a mudança real.",
+            author: "Roberto S., 28 anos"
+        },
+        "C": {
+            text: "Já estava no caminho, mas o Código acelerou minha transformação de forma impressionante. Recomendo para todo homem.",
+            author: "André L., 31 anos"
+        },
+        "D": {
+            text: "Mesmo sendo disciplinado, sempre há espaço para evolução. Este sistema me levou a um novo patamar de excelência.",
+            author: "Marcos T., 38 anos"
+        }
     };
-    return testimonials[profile] || '';
+    
+    const testimonial = testimonials[profileKey];
+    if (testimonial) {
+        testimonialContainer.innerHTML = `
+            <div class="testimonial">
+                <blockquote>"${testimonial.text}"</blockquote>
+                <cite>- ${testimonial.author}</cite>
+            </div>
+        `;
+    }
 }
 
-// Inicializar quando a página carregar
-document.addEventListener('DOMContentLoaded', initQuiz);
-
+// Event Listeners
+document.addEventListener('DOMContentLoaded', () => {
+    initQuiz();
+});
 
